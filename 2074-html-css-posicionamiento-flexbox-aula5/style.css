@@ -59,7 +59,10 @@ body{
 }
 
 .presentacion__enlaces__link{
-    width: 378px;
+    display: flex; /* El enlace es un contenedor flex */
+    justify-content: center;/* Centrado horizontal */
+    gap: 16px; /* Espacio entre el icono y el texto */
+    width: 378px;/* Ancho fijo */
     text-align: center;
     border-radius: 8px;
     font-size: 24px;
@@ -69,4 +72,10 @@ body{
     color: #F6F6F6;
     font-family: 'Montserrat', sans-serif;
     border: #22D4FD 2px solid;
+}
+
+.presentacion__enlaces__link:hover{/* Efecto hover que hace cambio de color del borde */
+    border-color: #0000FF;/* Cambia el color del borde al pasar el cursor */
+    background-color: #272727; /* Cambia el fondo al pasar el cursor */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el enlace */
 }
