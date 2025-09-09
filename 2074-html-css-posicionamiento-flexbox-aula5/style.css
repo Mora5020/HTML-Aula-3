@@ -6,6 +6,29 @@
     margin:0;
 }
 
+
+.header{/* Estilo del header */
+     padding: 2% 0% 0% 15%;/*cada numero equivale  a un valor de margen (arriba, derecha, abajo, izquierda)*/
+
+}
+
+.header__nav{/* Estilo del nav */
+    display: flex;
+    gap: 80px; /* Espacio entre los enlaces del nav */
+}
+
+.header__nav__link{/* Estilo de los enlaces del nav */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #22D4FD;
+}
+
+.header__nav__link:hover{/* Efecto hover que hace cambio de color del texto */
+    color: #0000FF;/* Cambia el color del texto al pasar el cursor */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el enlace */
+}
+
 body{
 
     box-sizing: border-box;
@@ -19,7 +42,7 @@ body{
 }
 
 .presentacion {
-    margin: 10% 15%;
+    padding: 7% 15%;/* Espacio interno del contenedor. Sacamos margin para poner padding. El contenedor es toda la seccion de presentacion en la medida que alejo los elementos del borde se acercan entre si*/
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -40,6 +63,7 @@ body{
 .presentacion__contenido__texto{
     font-size: 24px;
     font-family: 'Montserrat', sans-serif;
+    margin: 5%;
 }
 
 .presentacion__enlaces__subtitulo{/* Estilo del subtitulo agregado */
@@ -78,4 +102,15 @@ body{
     border-color: #0000FF;/* Cambia el color del borde al pasar el cursor */
     background-color: #272727; /* Cambia el fondo al pasar el cursor */
     cursor: pointer; /* Cambia el cursor al pasar sobre el enlace */
+}
+
+.footer{/* Estilo del footer */
+    background-color: #22D4FD;
+    color:#000000;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 24px 0;
+
 }
