@@ -33,7 +33,7 @@
 
 .header__nav__link{/* Estilo de los enlaces del nav */
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     color: var(--color-terciario);
     text-decoration: none;
@@ -56,18 +56,18 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px; /* Espacio entre la imagen y el contenido */
+    gap: 82px; /* Espacio entre la imagen y el contenido */
 }
 
 .presentacion__contenido{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .presentacion__contenido__titulo{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: 'Krona One', sans-serif;
     
 }
@@ -77,13 +77,13 @@ body{
 }
 
 .presentacion__contenido__texto{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     margin: 0%;
 }
 
 .presentacion__enlaces__subtitulo{/* Estilo del subtitulo agregado */
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Krona One', sans-serif;
     font-weight: 400;
 
@@ -101,11 +101,11 @@ body{
 .presentacion__enlaces__link{/* Estilo de los enlaces que se comportan como contenedores*/
     display: flex; /* El enlace es un contenedor flex */
     justify-content: center;/* Centrado horizontal */
-    gap: 16px; /* Espacio entre el icono y el texto */
-    width: 378px;/* Ancho del boton asignado por figma */
+    gap: 16px;; /* Espacio entre el icono y el texto */
+    width: 50%;/* Ancho del boton asignado por figma */
     text-align: center;
-    border-radius: 8px;
-    font-size: 24px;
+    border-radius: 8px;;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 21.5px 0;/* Espacio interno (arriba y abajo, izquierda y derecha) */
     text-decoration: none;
@@ -120,12 +120,16 @@ body{
     cursor: pointer; /* Cambia el cursor al pasar sobre el enlace */
 }
 
+.presentacion__imagen{
+    width: 50%;
+}
+
 .footer{/* Estilo del footer */
     background-color: var(--color-terciario);
     color:var(--color-primario);
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     padding: 24px 0;
 
