@@ -36,16 +36,12 @@ body{
     color: #F6F6F6;
 }
 
-
-.titulo-destaque {
-    color: #22D4FD; ;
-}
-
 .presentacion {
-    padding: 7% 15%;/* Espacio interno del contenedor. Sacamos margin para poner padding. El contenedor es toda la seccion de presentacion en la medida que alejo los elementos del borde se acercan entre si*/
+    padding: 5% 13%;/* Espacio interno del contenedor. Sacamos margin para poner padding. El contenedor es toda la seccion de presentacion en la medida que alejo los elementos del borde se acercan entre si*/
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 40px; /* Espacio entre la imagen y el contenido */
 }
 
 .presentacion__contenido{
@@ -58,12 +54,17 @@ body{
 .presentacion__contenido__titulo{
     font-size: 36px;
     font-family: 'Krona One', sans-serif;
+    
+}
+
+.titulo-destaque {
+    color: #22D4FD; ;
 }
 
 .presentacion__contenido__texto{
     font-size: 24px;
     font-family: 'Montserrat', sans-serif;
-    margin: 5%;
+    margin: 0%;
 }
 
 .presentacion__enlaces__subtitulo{/* Estilo del subtitulo agregado */
@@ -74,7 +75,7 @@ body{
 
 }
 
-.presentacion__enlaces{
+.presentacion__enlaces{/* Estilo del contenedor de los enlaces */
     display: flex;
     justify-content: space-between;
     flex-direction: column; /* Cambiado a columna */
@@ -82,16 +83,16 @@ body{
     gap: 32px; /* Espacio entre los enlaces */
 }
 
-.presentacion__enlaces__link{
+.presentacion__enlaces__link{/* Estilo de los enlaces que se comportan como contenedores*/
     display: flex; /* El enlace es un contenedor flex */
     justify-content: center;/* Centrado horizontal */
     gap: 16px; /* Espacio entre el icono y el texto */
-    width: 378px;/* Ancho fijo */
+    width: 378px;/* Ancho del boton asignado por figma */
     text-align: center;
     border-radius: 8px;
     font-size: 24px;
     font-weight: 600;
-    padding: 21.5px 0;
+    padding: 21.5px 0;/* Espacio interno (arriba y abajo, izquierda y derecha) */
     text-decoration: none;
     color: #F6F6F6;
     font-family: 'Montserrat', sans-serif;
