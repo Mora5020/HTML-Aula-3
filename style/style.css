@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 
+:root{
+    --color-primario: #000000;
+    --color-secundario:#F6F6F6;
+    --color-terciario: #22D4FD;
+    --color-hover-fondo: #272727;
+    --color-hover-borde: #0000FF;
+
+    --fuente-montserrat: 'Montserrat', sans-serif;
+    --fuente-krona: 'Krona One', sans-serif;
+
+}
+
+
+
 * {
     padding: 0;
     margin:0;
@@ -21,20 +35,20 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 400;
-    color: #22D4FD;
+    color: var(--color-terciario);
     text-decoration: none;
 }
 
 .header__nav__link:hover{/* Efecto hover que hace cambio de color del texto */
-    color: #0000FF;/* Cambia el color del texto al pasar el cursor */
+    color: var(--color-hover-borde);/* Cambia el color del texto al pasar el cursor */
     cursor: pointer; /* Cambia el cursor al pasar sobre el enlace */
 }
 
 body{
 
     box-sizing: border-box;
-    background-color: #000000;
-    color: #F6F6F6;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
 }
 
 .presentacion {
@@ -59,7 +73,7 @@ body{
 }
 
 .titulo-destaque {
-    color: #22D4FD; ;
+    color: var(--color-terciario) ;
 }
 
 .presentacion__contenido__texto{
@@ -95,20 +109,20 @@ body{
     font-weight: 600;
     padding: 21.5px 0;/* Espacio interno (arriba y abajo, izquierda y derecha) */
     text-decoration: none;
-    color: #F6F6F6;
+    color: var(--color-secundario);
     font-family: 'Montserrat', sans-serif;
-    border: #22D4FD 2px solid;
+    border: var(--color-terciario) 2px solid;
 }
 
 .presentacion__enlaces__link:hover{/* Efecto hover que hace cambio de color del borde */
-    border-color: #0000FF;/* Cambia el color del borde al pasar el cursor */
-    background-color: #272727; /* Cambia el fondo al pasar el cursor */
+    border-color: var(--color-hover-borde);/* Cambia el color del borde al pasar el cursor */
+    background-color: var(--color-hover-fondo); /* Cambia el fondo al pasar el cursor */
     cursor: pointer; /* Cambia el cursor al pasar sobre el enlace */
 }
 
 .footer{/* Estilo del footer */
-    background-color: #22D4FD;
-    color:#000000;
+    background-color: var(--color-terciario);
+    color:var(--color-primario);
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
